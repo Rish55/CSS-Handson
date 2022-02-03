@@ -7,34 +7,44 @@
     <title>Document</title>
     <!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     --><style>
-       .red-text {
-    color: red;
-        }
-        h2 {
-    font-family: Lobster, monospace;
-        }
-        p {
-    font-size: 16px;
-    font-family: monospace;
+      .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
   }
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
+
+  .box {
     border-style: solid;
-    border-radius: 50%;
-
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
   }
 
-  .smaller-image {
-    width: 100px;
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
   }
-  #cat-photo-form{
-    background-color: silver;
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
   }
         </style>
 </head>
 <body>
     <h2 id="cat-photo-form">CatPhotoApp</h2>
+    <h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
